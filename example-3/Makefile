@@ -10,13 +10,13 @@ all: debug release
 
 debug: $(DEBUG_EXEC)
 
-$(DEBUG_EXEC): $(SOURSE)
-	g++ $(DEBUG_FLAGS) $(SOURSE) -o $(DEBUG_EXEC) 
+$(DEBUG_EXEC): $(SOURCE)
+	g++ $(DEBUG_FLAGS) $(SOURCE) -o $(DEBUG_EXEC) 
 
 release: $(RELEASE_EXEC)
 
-$(RELEASE_EXEC): $(SOURSE)
-	g++ $(RELEASE_FLAGS) $(SOURSE) -o $(RELEASE_EXEC)
+$(RELEASE_EXEC): $(SOURCE)
+	g++ $(RELEASE_FLAGS) $(SOURCE) -o $(RELEASE_EXEC)
 
 clean:
 	rm -f $(RELEASE_EXEC) $(DEBUG_EXEC)
